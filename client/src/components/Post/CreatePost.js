@@ -40,7 +40,7 @@ const CreatePost = ({ token, onPostCreated }) => {
                 // Create the Post
                 const body = JSON.stringify(newPost);
                 const res = await axios.post(
-                    'http://localhost:5000/api.posts',
+                    'http://localhost:5000/api/posts',
                     body,
                     config
                 );
@@ -53,6 +53,7 @@ const CreatePost = ({ token, onPostCreated }) => {
             }
         }
     };
+    
     return (
         <div className="form-container">
             <h2>Create New Post</h2>
